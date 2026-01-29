@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: system-ui, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 100%;
+    font-style: ;
+    font-weight: ;
+    line-height: 1.5
+}
+header{
+    display: flex;
+    align-items: center;
+}
+header h2{
+    font-size: 300%;
+    color: steelblue;
+    font-style: italic;
+    text-shadow: 2px 2px 15px gray;
+}
+a:link, a:visited {
+    color: steelblue;
+}
+a:hover, a:active {
+    color: maroon;
+}
+aside a{
+    font-weight: bold;
+}
+aside a a:visited{
+    color: maroon;
+}
+h4{
+    font-weight: normal;
+}

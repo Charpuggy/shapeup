@@ -9,6 +9,7 @@
 	<meta name="author" content="Charles Recck">
 
 	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/normalize.css">
 	<title>Document</title>
 </head>
 
@@ -16,8 +17,10 @@
 
 	<Header>
 		<img src="images/shape_up_logo.png" alt="Shape Up logo image">
+		<div>
 		<h2>Shape Up!</h2>
 		<h3>Find the best fit for you</h3>
+		</div>
 		
 	</Header>
 
@@ -52,9 +55,13 @@
 	</main>
 
 	<footer>
-		<p>&copy; 2026 Shape Up!</p>
+		<p>&copy; <span id="copyrightyear"></span> Shape Up!</p>
 	</footer>
 
 </body>
 
 </html>
+<script>
+        const d = new Date();
+        document.getElementById('copyrightyear').innerHTML = d.getFullYear();
+    </script>
