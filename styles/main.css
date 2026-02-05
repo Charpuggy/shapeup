@@ -23,6 +23,7 @@ body{
 header{
     border-bottom: 3px solid steelblue;
     background-image: linear-gradient(to left, lightblue, white);
+    padding-left: 20px;
 }
 header h2{
     font-size: 300%;
@@ -42,6 +43,78 @@ aside a{
 aside a a:visited{
     color: maroon;
 }
+#nav_menu{
+   border-bottom: 3px solid steelblue;
+    background-color: steelblue;
+}
+#nav_menu ul{
+    list-style-type: none;
+    position: relative;
+    display: flex;
+}
+#nav_menu li{
+    width: 20%;
+}
+#nav_menu a{
+    display: block;
+    color: white;
+    background-color: steelblue;
+    text-align: center;
+    padding: .7em 0;
+    font-weight: bold;
+    text-decoration: none;
+}
+#nav_menu ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%; 
+}
+#nav_menu ul ul li a{
+    text-align: left;
+    padding-left: 0.25em;
+}
+#nav_menu ul li:hover > ul{
+    display: block;
+}
+#nav_menu a:hover{
+    color: black;
+    background-color: lightsteelblue;
+}
+/*******************************************************************
+
+*****************************************************************
+navlist
+******************************************************************
+*****************************************************************/
+#nav_list h2{
+    margin-top: 25px;
+    text-align: center;
+}
+#nav_list ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:.5em;
+}
+#nav_list li{
+    width: 90%;
+    border: 1px solid steelblue;
+    border-radius: 5px;
+}
+#nav_list a{
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: lightsteelblue;
+    padding: .5em;
+    color: black;
+}
+#nav_list a:hover{
+    background-color: steelblue;
+    color: white;
+}
 main{
     display: flex;
     flex-direction: row-reverse;
@@ -50,7 +123,7 @@ section{
     max-width: 70%;
 }
 aside{
-    max-width: 25%;
+    width: 30%;
 }
 h4{
     font-weight: normal;
@@ -61,13 +134,13 @@ h1{
 }
 section p{
     margin: 0 3% 20px;
-
 }
 blockquote{
     margin: 0 15% 20px;
     border-left: 5px solid steelblue;
     padding:7px;
     background-color: rgb(224, 240, 246); 
+    border-radius: 0 50vh 50vh 0;
 }
 section h2, section h4 aside h2{
     margin: 0 6% 40px;
@@ -79,14 +152,17 @@ footer{
     justify-content: center;
     
 }
-aside h2{
+/*aside h2{
     margin: 20px
 }
+
 aside ul{
     margin-left: 8%;
     line-height: 1.5;
     padding-left: 5%;
 }
+*/
+
 footer p{
     padding: 20px 0;
     font-variant: small-caps;
